@@ -1,10 +1,6 @@
 export default {
     headling(node, context) {
-        const {origin, entering} = context;
-        const tag = origin();
-        if (entering) {
-            
-        }
-        return tag;
+        console.error('node==>', node);
+        console.error('context==>', context);
     }
 }

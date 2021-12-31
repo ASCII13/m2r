@@ -1,5 +1,5 @@
 <template>
-    <editor :initialValue="resume" :options="defaultOptions" :customHTMLRenderer="HTMLRender"/>
+    <editor ref="mdEditor" :initialValue="resume" :options="defaultOptions"/>
 </template>
 
 <script>
@@ -9,14 +9,20 @@ import { Editor } from '@toast-ui/vue-editor';
 import '@toast-ui/editor/dist/toastui-editor.css';
 export default {
     name: 'MarkdownEditor',
-    components: {
-        Editor,
-    },
     data() {
         return {
             resume,
             defaultOptions,
         }
-    }
+    },
+    mounted() {
+        console.log(this.$refs.mdEditor);
+    },
+    methods: {
+
+    },
+    components: {
+        Editor,
+    },
 }
 </script>
