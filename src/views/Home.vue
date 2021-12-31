@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <top/>
+    <markdown-editor class="editor"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Top from '@/components/Header';
+import MarkdownEditor from '@/components/MarkdownEditor';
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
+    Top,
+    MarkdownEditor,
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+.editor {
+  height: calc(100vh - 5rem) !important;
+}
+</style>
