@@ -1,14 +1,10 @@
 <template>
-    <editor
-        initialValue="test title"
-        :options="defaultOptions"
-        initialEditType="markdown"
-        previewStyle="vertical"
-    />
+    <editor :initialValue="resume" :options="defaultOptions" :customHTMLRenderer="HTMLRender"/>
 </template>
 
 <script>
-import defaultOptions from './default';
+import resume from './default-resume';
+import defaultOptions from './default-options';
 import { Editor } from '@toast-ui/vue-editor';
 import '@toast-ui/editor/dist/toastui-editor.css';
 export default {
@@ -18,6 +14,7 @@ export default {
     },
     data() {
         return {
+            resume,
             defaultOptions,
         }
     }
