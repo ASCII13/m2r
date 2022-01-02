@@ -4,7 +4,7 @@
         <span class="download">
             Download
             <ul class="d-menu">
-                <li v-for="(item, index) in dOptions" :key="index" @click="downloadPDF(index)">{{item}}</li>
+                <li v-for="(item, index) in dOptions" :key="index" @click="$bus.$emit('download', item)">{{item}}</li>
             </ul>
         </span>
         <span class="theme">
@@ -24,13 +24,6 @@ export default {
             dOptions: ['PDF', 'Markdown']
         }
     },
-    mounted() {
-    },
-    methods: {
-        downloadPDF(index) {
-            if (index === 0)  window.alert('点击了下载PDF');
-        },
-    }
 }
 </script>
 

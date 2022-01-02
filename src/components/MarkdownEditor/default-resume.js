@@ -1,5 +1,4 @@
-export default `
-# Tim Qian
+export default `# Tim Qian
 
 A full-stack JS developer and open-source activist.
 

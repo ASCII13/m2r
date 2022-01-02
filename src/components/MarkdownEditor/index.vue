@@ -1,5 +1,5 @@
 <template>
-    <editor ref="mdEditor" :initialValue="resume" :options="defaultOptions"/>
+    <editor ref="editor" :initialValue="resume" :options="defaultOptions"/>
 </template>
 
 <script>
@@ -16,10 +16,27 @@ export default {
         }
     },
     mounted() {
-        console.log(this.$refs.mdEditor);
+        this.$bus.$on('download', fileType => {
+            if (fileType === 'Markdown') {
+                const md = this.$refs.editor.invoke('getMarkdown');
+                const blob = new Blob([md], {type: 'text/markdown'});
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+
+                a.setAttribute('href', url);
+                a.setAttribute('download', 'resume.md');
+                a.click();
+
+                URL.revokeObjectURL(url);
+            } else if (fileType === 'PDF') {
+
+            }
+        });
+    },
+    beforeDestroy() {
+        this.$bus.$off('download');
     },
     methods: {
-
     },
     components: {
         Editor,
