@@ -7,12 +7,12 @@
                 <li v-for="(item, index) in dOptions" :key="index" @click="$bus.$emit('download', item)">{{item}}</li>
             </ul>
         </span>
-        <span class="theme">
+        <!-- <span class="theme">
             Theme
             <ul class="t-menu">
                 <li v-for="(item, index) in tOptions" :key="index">{{item}}</li>
             </ul>
-        </span>
+        </span> -->
     </header>
 </template>
 
@@ -20,7 +20,7 @@
 export default {
     data() {
         return {
-            tOptions: ['Normal'],
+            // tOptions: ['Normal'],
             dOptions: ['PDF', 'Markdown']
         }
     },
@@ -52,13 +52,13 @@ export default {
     position: relative;
     cursor: pointer;
 }
-.theme {
-    @extend .menu;
-    margin-right: 2rem;
-    &:hover > .t-menu {
-        display: block;
-    }
-}
+// .theme {
+//     @extend .menu;
+//     margin-right: 2rem;
+//     &:hover > .t-menu {
+//         display: block;
+//     }
+// }
 .download {
     @extend .menu;
     margin-right: 10rem;
@@ -81,7 +81,7 @@ ul {
         line-height: 2.8rem;
         font-size: 1rem;
         &:hover {
-            background-color: darkolivegreen;
+            background-color: #4385cc;
         }
     }
 }

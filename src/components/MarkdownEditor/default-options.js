@@ -1,13 +1,11 @@
-// import theme from './html-render';
+import renderer from './html-renderer';
 
 export default {
-    useCommandShortcut: true,
     usageStatistics: false,
-    hideModeSwitch: false,
     toolbarItems: [
-        ['heading', 'bold', 'italic', 'hr', 'quote'],
-        ['ul', 'ol', 'indent', 'outdent', 'link'],
+        ['heading', 'bold', 'italic', 'hr', 'link'],
+        ['ul', 'ol', 'indent', 'outdent'],
         ['scrollSync']
     ],
-    // customHTMLRenderer: theme
+    customHTMLRenderer: renderer
 }

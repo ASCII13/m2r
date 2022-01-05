@@ -3,10 +3,13 @@
 </template>
 
 <script>
+import printJS from 'print-js';
 import resume from './default-resume';
+import renderHTML from '@/utils/render-html';
 import defaultOptions from './default-options';
 import { Editor } from '@toast-ui/vue-editor';
 import '@toast-ui/editor/dist/toastui-editor.css';
+
 export default {
     name: 'MarkdownEditor',
     data() {
@@ -29,14 +32,19 @@ export default {
 
                 URL.revokeObjectURL(url);
             } else if (fileType === 'PDF') {
-
+                const html = this.$refs.editor.invoke('getHTML');
+                const render = renderHTML({html});
+                
+                printJS({
+                    type: 'raw-html',
+                    printable: render,
+                    targetStyles: ['*'],
+                });
             }
         });
     },
     beforeDestroy() {
         this.$bus.$off('download');
-    },
-    methods: {
     },
     components: {
         Editor,
