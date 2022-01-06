@@ -8,7 +8,7 @@ export default function({html}) {
         font-size: 24px;
         line-height: 28px;
         border-bottom: 3px double #999;
-        margin: 52px 0 15px 0;
+        margin: 0 0 15px 0;
         padding-bottom: 7px;
     }
     .title {
