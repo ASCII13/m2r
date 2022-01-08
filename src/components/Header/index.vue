@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <span class="logo">M2R</span>
+        <a class="logo" href="https://github.com/ASCII13/m2r" target="_blank">M2R</a>
         <span class="download">
             Download
             <ul class="d-menu">
@@ -44,6 +44,7 @@ export default {
     margin-left: 12rem;
     font-size: 2rem;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 .menu {
     @extend .base;

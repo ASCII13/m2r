@@ -1,43 +1,36 @@
-export default `# Tim Qian
+export default `# 齐天大圣
 
-A full-stack JS developer and open-source activist.
+188 8888 8888 | [xxxx@foxmail.com](xxxx@foxmail.com) | [github.com/ASCII13](https://github.com/ASCII13)
 
-## Contact
+## 专业技能
 
-| [GitHub](htttps://github.com/timqian) | [Twitter](https://twitter.com/tim_qian) | [Email](mailto:timqian@t9t.io) | [Website](https://timqian.com) | [Blog](https://blog.t9t.io) | [Patreon](https://www.patreon.com/timqian) |
+- 熟悉xx技术点
+- 熟悉xx技术点
+- 熟悉xx技术点
+- 熟悉xx技术点
 
-## Teck Stack
+## 开源项目
 
-- Backend: Node.js; Express; AWS lambda; serverless; GraphQL; RabbitMQ
-- Database: DynamoDB; MongoDB; Postgres; SQLite; AWS RDS; Redis
-- Frontend: react.js; SASS/CSS; d3.js
-- Chrome Extension: react.js; SASS/CSS;
+- **[BotClub](https://github.com/ASCII13/BotClub)**: 基于 Vue 开发的资讯站点
+  - 利用**组件化**思维抽离通用代码封装组件，提高代码复用率，提升开发效率
+  - 二次封装 Axios ，将单个接口独立为函数，便于接口的使用和集中管理
+  - 采用 **Nginx** 进行**前端部署**和**请求转发**，支持 **Https** 访问，增强系统安全性
+  - 对首次加载速度进行性能优化，访问时间从**20s+ 降低到 3s - 5s 左右**，提升用户体验
+  - 使用 **Jenkins** 进行持续部署，实现**构建部署自动化**
 
-## Projects (open source)
+- **[WanAndroid](https://github.com/ASCII13/WanAndroid)**: 基于原生技术开发的微信小程序
+  - 集成 WebPack，探索小程序工程化体系
+  - 基于 Promise 封装网络请求
+  - 支持暗黑模式
 
-- **[chart.xkcd](https://github.com/timqian/chart.xkcd)**: xkcd styled chart lib.
-  - 5.5k+ stars on GitHub, 100k downloads
-  - Built with d3.js
-- **[tomato-pie](https://github.com/t9tio/tomato-pie)**: A new UI for Pomodoro Technique. Schedule your time directly with a clock.
-  - 1k+ active users
-  - Built with pure HTML, CSS, JS
-- **[repo-analytics](https://github.com/repo-analytics/repo-analytics.github.io)**: Thorough analytics for your GitHub repos.
-  - 100+ users
-  - Frontend: React.js; backend: node.js, AWS lambda, dynamodb
+## 工作经历
 
-## Working Experience
+- **2022/02 - 至今**
+GitHub｜测试工程师
+负责xx工作，取得了xx成绩
 
-- **[t9t.io](https://t9t.io)**: Indie Hacker; (2019/05 - now)
-Trying to build something people want
-- **[modelo.io](https://modelo.io)**: Backend developer; Backend leader; (2016/10 - 2019/05)
-Lead a small backend team; Maintain and write backend code using node.js, GraphQL, PostgreSQL...
-- **[ele.me](https://www.ele.me/)** (now part of [Alibaba](https://www.alibaba.com/)): Intern; (2016/05 - 2016/08)
-Develop performance monitor system making use of node.js, MongoDB, Redis and koa
-- **[Oracle China](https://oracle.com)**: Intern; (2015/07 - 2016/05)
-Maintain automatic testing system code(written in node.js) in the OATS team.
+## 教育经历
 
-## Education
-
-- Master's Degree in computational physics, **Shanghai University** *(2014 - 2017)*
-- Bachelor's Degree in physics, **Ningbo University** *(2010 - 2014)*
+- **2012 - 2022**
+麻省理工学院｜人工智能专业
 `;
