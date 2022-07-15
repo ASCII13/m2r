@@ -13,6 +13,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  base: '/m2r/',
   routes
 })
 

@@ -1,7 +1,7 @@
 const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
-    publicPath: './',
+    publicPath: '/m2r/',
     devServer: {
         port: 8888
     },
