@@ -21,6 +21,11 @@ export default function({html}) {
     .link-color {
         color: #4b96e6;
     }
+    img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
     </style>
     <body>
     ${html}
